@@ -1,0 +1,21 @@
+<div class="row hidden">
+	<div class="col-xs-12">
+		<h2>Homepage yahhh</h2>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12">
+		<h3>Events</h3>
+		<div class="panel panel-default" ng-repeat="evt in home.events">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<span class="pull-right" am-time-ago="evt.timestamp"></span>
+					{{ evt.title }}
+				</h3>
+			</div>
+		</div>
+	</div>
+</div>
+
+
