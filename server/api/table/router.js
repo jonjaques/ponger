@@ -1,11 +1,10 @@
 var express = require('express');
 var router = express.Router();
+var socket = require('./socket');
 
-/* GET home page. */
 router.get('/', function(req, res) {
-	res.render('index', {
-		title: 'Ponger'
-	});
+	res.json({});
 });
+
 
 module.exports = router;

@@ -22,11 +22,11 @@ config([
 		$stateProvider
 			.state('app', {
 				abstract: true,
-				templateUrl: '/views/layout.html'
+				templateUrl: '/client/src/app.html'
 			})
 			.state('app.home', {
 				url: '',
-				templateUrl: '/views/home/index.html',
+				templateUrl: '/client/src/home/index.html',
 				controller: 'HomeCtrl',
 				controllerAs: 'home'
 			})

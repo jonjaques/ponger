@@ -2,9 +2,9 @@ var util = require('util');
 var EventEmitter = require('events').EventEmitter;
 var _ = require('underscore');
 var q = require('q');
-var spark = require('spark')
+var spark = require('spark');
 
-function Device(opts) {
+function SparkCore(opts) {
 	this._device = null;
 	this.authenticated = false;
 	this.opts = opts;
@@ -13,9 +13,9 @@ function Device(opts) {
 	}
 }
 
-util.inherits(Device, EventEmitter);
+util.inherits(SparkCore, EventEmitter);
 
-_(Device.prototype).extend({
+_(SparkCore.prototype).extend({
 
 	authenticate: function() {
 		var opts = this.opts;
@@ -135,4 +135,4 @@ _(Device.prototype).extend({
 
 })
 
-module.exports.Device = Device;
+module.exports.SparkCore = SparkCore;
