@@ -1,7 +1,7 @@
 <% include header %>
 
-<h1><%= message %></h1>
-<h2><%= message %></h2>
-<pre><%= error.stack %></pre>
+<div id="app" ng-cloak ng-app="ponger" ng-controller="AppCtrl as app">
+	<div ui-view></div>
+</div>
 
 <% include footer %>

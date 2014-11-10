@@ -6,7 +6,7 @@ module.exports = function(app) {
 
 	// Public Routes
 	app.use('/', require('./web/router'));
-	app.use('/client', express.static(path.join(__dirname, 'client')));
+	app.use('/client', express.static('client'));
 
 	app.use('/api/table', require('./api/table/router'));
 	app.use('/api/users', require('./api/users/router'));
