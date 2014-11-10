@@ -54,8 +54,8 @@ controller('HomeCtrl', [
 	function(socket) {
 		var self = this;
 		this.events = [];
-		var greenScore = _.throttle(onScore('Green', this.events), 1000);
-		var redScore = _.throttle(onScore('Red', this.events), 1000);
+		var greenScore = _.throttle(onScore('Green', this.events), 1500);
+		var redScore = _.throttle(onScore('Red', this.events), 1500);
 		socket.on('spark:localconn', function() {
 			self.events.unshift({
 				title: 'Connected',
